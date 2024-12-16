@@ -1,0 +1,17 @@
+@font-face {
+    font-family: gilroyRegular;
+    src: url(../font/Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: gilroyHeavy;
+    src: url(../font/Gilroy-Heavy.ttf);
+}
+
+
+.gilroyRegular{
+    font-family: gilroyRegular;
+}
+
+.gilroyHeavy{
+    font-family: gilroyHeavy;
+}
