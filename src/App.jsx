@@ -3,19 +3,22 @@ import Loader from './components/Loader'
 import BlackScreen from './components/BlackScreen'
 import gsap from 'gsap'
 import PageOne from './components/PageOne'
-import PageTwo from './components/PageTwo'
+import Menu from './components/Menu'
 
 const App = () => {
 
   const tl = gsap.timeline();
 
   return (
-    <div className='h-screen w-screen overflow-hidden'>
+    <div className='h-screen w-screen relative overflow-hidden'>
       <Loader tl={tl} />
 
       <BlackScreen tl={tl} />
       
+
+      <Menu />
       <PageOne />
+      
 
     </div>
   )
