@@ -16,7 +16,7 @@ const App = () => {
       <BlackScreen tl={tl} />
       
 
-      <Menu />
+      {/* <Menu /> */}
       <PageOne />
       
 
