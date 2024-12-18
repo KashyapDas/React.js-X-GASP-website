@@ -1,13 +1,23 @@
 import React from 'react'
 import style from './style.module.css'
+import { menuAtom } from '../store/menuAtom';
+import { useSetRecoilState } from 'recoil';
+
 
 const MenuRight = () => {
+
+  const menuFnc = useSetRecoilState(menuAtom);
+
+  const menuHandler = ()=>{
+    menuFnc(false)
+  }
+
   return (
     <div className='bg-[#1A1A1A] w-[35%] h-full'>
 
     {/* This is the close button */}
       <div className='w-full h-[5%]'> 
-        <h1 className={`${style.gilroyRegular} uppercase text-xs font-extralight text-right pr-5 pt-3 mt-1 cursor-pointer hover:text-sm origin-center transition-all ease-in-out duration-75`}>Close</h1>
+        <h1 onClick={menuHandler} className={`${style.gilroyRegular} uppercase text-xs font-extralight text-right pr-5 pt-3 mt-1 cursor-pointer hover:text-sm origin-center transition-all ease-in-out duration-75`}>Close</h1>
       </div>
 
       <h1 className={`${style.gilroyRegular} text-2xl font-semibold mt-10`}>Logo</h1>

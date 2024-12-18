@@ -9,7 +9,6 @@ const BlackScreen = ({tl}) => {
     tl.to(blackScreenRef.current, {
       y: "-100%",
       duration: 0.5,
-      scrub : 5
     });
   });
 

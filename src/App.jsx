@@ -4,23 +4,26 @@ import BlackScreen from './components/BlackScreen'
 import gsap from 'gsap'
 import PageOne from './components/PageOne'
 import Menu from './components/Menu'
+import { RecoilRoot } from 'recoil'
 
 const App = () => {
 
   const tl = gsap.timeline();
 
   return (
+    <RecoilRoot>
     <div className='h-screen w-screen relative overflow-hidden'>
       <Loader tl={tl} />
 
       <BlackScreen tl={tl} />
       
 
-      {/* <Menu /> */}
       <PageOne />
-      
+      <Menu />
+
 
     </div>
+    </RecoilRoot>
   )
 }
 

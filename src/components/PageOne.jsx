@@ -4,6 +4,7 @@ import React, {useRef} from 'react'
 import Navbar from "./Navbar";
 import Home from "./Home"
 
+
 const PageOne = () => {
 
   const mainDivRef = useRef(null);

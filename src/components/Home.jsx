@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
 
+
 const Home = () => {
 
   // you should gave the delay greater than 2.7
@@ -17,19 +18,16 @@ const Home = () => {
       opacity : 0,
       delay : 5,
       duration : 0.4,
-      scrub : 2
     })
     tl.from(".mainHeading h2",{
       y : "90%",
       delay : 3.5,
       duration : 0.5,
       stagger : 0.2,
-      scrub : 4
     })
     tl.from(".subHeading",{
         y : "100%",
         duration : 0.6,
-        scrub : 3
     })
   })
 
