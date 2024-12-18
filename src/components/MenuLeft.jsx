@@ -6,7 +6,7 @@ const MenuLeft = () => {
   return (
     <div className='bg-[#1A1A1A] w-[65%] h-full flex items-center justify-center relative'>
 
-        <div className='w-[73%] h-[93%] absoulte overflow-hidden absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-20 opacity-[80%] brightness-200 contrast-200'>
+        <div className='w-[68%] h-[88%] absoulte overflow-hidden absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-20 opacity-[100%] brightness-200 '>
 
             <img src={bgPerson} className='w-full h-full object-cover object-center scale-x-[-1] opacity-[100%]' />
         </div>
